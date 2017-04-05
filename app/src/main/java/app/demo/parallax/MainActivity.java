@@ -12,6 +12,7 @@ import app.demo.parallax.imageswitcher.MyImageSwitcher;
 import app.demo.parallax.stackview.MyStackViewActivity;
 import app.demo.parallax.textswitcher.MyTextSwitchwer;
 import app.demo.parallax.textureview.MyTextureViewActivity;
+import app.demo.parallax.viewanimator.MyViewAnimatorActivity;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
@@ -27,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.button4).setOnClickListener(this);
         findViewById(R.id.button5).setOnClickListener(this);
         findViewById(R.id.button6).setOnClickListener(this);
+        findViewById(R.id.button7).setOnClickListener(this);
     }
 
     @Override
@@ -45,7 +47,10 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(this, MyTextSwitchwer.class));
                 break;
             case R.id.button6:
-                startActivity(new Intent(this, MyTextureViewActivity .class));
+                startActivity(new Intent(this, MyTextureViewActivity.class));
+                break;
+            case R.id.button7:
+                startActivity(new Intent(this, MyViewAnimatorActivity.class));
                 break;
 
         }

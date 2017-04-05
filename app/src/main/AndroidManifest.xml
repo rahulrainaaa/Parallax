@@ -22,7 +22,8 @@
         <activity android:name=".adapterviewflipper.MyAdapterViewFlipper" />
         <activity android:name=".stackview.MyStackViewActivity" />
         <activity android:name=".textswitcher.MyTextSwitchwer" />
-        <activity android:name=".textureview.MyTextureViewActivity"></activity>
+        <activity android:name=".textureview.MyTextureViewActivity" />
+        <activity android:name=".viewanimator.MyViewAnimatorActivity"></activity>
     </application>
 
 </manifest>
