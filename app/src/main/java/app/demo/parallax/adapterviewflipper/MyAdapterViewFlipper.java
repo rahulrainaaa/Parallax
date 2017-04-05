@@ -51,9 +51,11 @@ public class MyAdapterViewFlipper extends AppCompatActivity {
         adapter = new CustomAdapter(this, R.layout.image_layout, i);
         adapterViewFlipper.setAdapter(adapter);
 
-        //adapterViewFlipper.setFlipInterval(4000);
-//        adapterViewFlipper.startFlipping();
-        //      adapterViewFlipper.setAutoStart(true);
+        adapterViewFlipper.setOutAnimation(this, android.R.animator.fade_in);
+        adapterViewFlipper.setInAnimation(this, android.R.animator.fade_out);
+        adapterViewFlipper.setFlipInterval(1000);
+        adapterViewFlipper.startFlipping();
+        adapterViewFlipper.setAutoStart(true);
     }
 
     @Override

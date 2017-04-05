@@ -59,7 +59,7 @@ public class MyImageSwitcher extends AppCompatActivity implements ViewSwitcher.V
         fin = AnimationUtils.loadAnimation(this, android.R.anim.fade_in);
         imageSwitcher = (ImageSwitcher) findViewById(R.id.imageswitcher);
         imageSwitcher.setFactory(this);
-        for (int x = 0; x < 7; x++) {
+        for (int x = 0; x < 26; x++) {
             imageSwitcher.setImageResource(i[x]);
         }
     }
